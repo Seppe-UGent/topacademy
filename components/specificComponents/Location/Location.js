@@ -16,7 +16,6 @@ export default class Location extends Component {
 		return (
 			<div {...storyblokEditable(this.props.blok)}>
 				<Headermenu blok={this.props.menu.content}></Headermenu>
-
 				<main>
 					<Hero blok={this.props.blok} contentTypeTag="course" />
 					<div className={css["location-page__main-content"]}>
