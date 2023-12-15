@@ -20,7 +20,6 @@ export default class Course extends Component {
 				<main>
 					<Hero blok={this.props.blok} contentTypeTag="course" />
 					<div className={css["course-page__main-content"]}>
-						HALLO
 						<div id="course-page__short-description" key="course-page__short-description" className={css["course-page__short-description"]}>
 							<section className={css["rich-text-section--with-navigator"]}>
 								<h2 className={css["rich-text-section__title"]}>What will we learn</h2>
