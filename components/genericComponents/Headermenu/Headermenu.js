@@ -83,8 +83,8 @@ export default class Headermenu extends Component {
 						<nav className={css["main-header__nav-home"]}>
 							<a href="/">
 								<div className={css["main-header__nav-home-container"]}>
-									<img src="/images/logo/logowithtext.svg" alt="logo" className={css["main-header__nav-home-logo"]} />
-									<img src="/images/logo/logo.svg" alt="logo" className={css["main-header__nav-home-logo--mobile"]} />
+									<img src="https://raw.githubusercontent.com/Seppe-UGent/topacademy/master/Football-academy-logo.png" alt="logo" className={css["main-header__nav-home-logo"]} />
+									<img src="https://raw.githubusercontent.com/Seppe-UGent/topacademy/master/Football-academy-logo.png" alt="logo" className={css["main-header__nav-home-logo--mobile"]} />
 								</div>
 							</a>
 						</nav>
