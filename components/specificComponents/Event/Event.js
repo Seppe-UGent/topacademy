@@ -11,8 +11,6 @@ import { RichTextToHTML } from "../../../functions/storyBlokRichTextRenderer";
 export default class Event extends Component {
 
 	constructor(props) {
-        console.log("-----------------------------------------------------")
-        console.log(props.blok.locations)
 		super(props);
 	}
 
@@ -37,7 +35,14 @@ export default class Event extends Component {
 								))}
 							</section>
 						</div>
-					
+						<div id="course-page__short-description" key="course-page__short-description" className={css["course-page__short-description"]}>
+							<section className={css["rich-text-section--with-navigator"]}>
+								<h2 className={css["rich-text-section__title"]}>Locations</h2>
+								{this.props.blok.locations && this.props.blok.locations.map((loc) => (
+									<LocationCard blok={loc} key={loc._uid} />
+								))}
+							</section>
+						</div>
 						<div id="course-page__short-description" key="course-page__short-description" className={css["course-page__short-description"]}>
 							<section className={css["rich-text-section--with-navigator"]}>
 							</section>
