@@ -10,12 +10,9 @@ export default class Location extends Component {
 
 	constructor(props) {
 		super(props);
-		console.log("qskdfjqsjfmlqsdjfmlqksdjflmqsjfmlkqsjfmlsdjfmlkqsdjf")
-		console.log(props.blok)
 	}
 
 	render() {
-		console.log(this.props.blok)
 		return (
 			<div {...storyblokEditable(this.props.blok)}>
 				<Headermenu blok={this.props.menu.content}></Headermenu>

@@ -11,7 +11,6 @@ import { getDefaultStoryBlokImageSet } from "../../../functions/StoryBlokImageHe
 
 export default function Hero({ blok }) {
 	let showImage = (blok.image && blok.image.filename);
-	console.log(blok)
 	let colorCssName = "--" + blok.colorcode?.content?.title;
 	let titleString = typeof blok.title === "string" ? blok.title : undefined;
 	let taglineString = typeof blok.tagline === "string" ? blok.tagline : undefined;

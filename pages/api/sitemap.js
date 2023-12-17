@@ -20,6 +20,16 @@ export default async function handler(req, res) {
   paths.push(homelink);
 
   await storyblokApi.get(`cdn/links`, {
+    starts_with: "events",
+  }).then((result) => {
+    Object.keys(result.data.links).forEach((linkKey) => {
+      if (!result.data.links[linkKey].is_folder && result.data.links[linkKey].published) {
+        paths.push(result.data.links[linkKey]);
+      }
+    });
+  });
+
+  await storyblokApi.get(`cdn/links`, {
     starts_with: "courses",
   }).then((result) => {
     Object.keys(result.data.links).forEach((linkKey) => {

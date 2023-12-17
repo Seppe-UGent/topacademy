@@ -1,28 +1,29 @@
 ﻿/*General colors*/
-$color-grey-very-light: #e1e4ea;
-$color-grey-super-light: #f4f6fc;
-$color-grey-super-ultra-light: #f9fbff;
-$color-grey-light: #9ea8bb;
-$color-grey-normal: #001c54;
-$color-blue-ultra-light: #f5f8fd;
-$color-blue-very-light: #eaf0fd;
-$color-blue-light: #d2e0ff;
-$color-blue-mid: #ccd7f1;
-$color-blue-normal: #1b6bf8;
-$color-red-very-light: #ffe8e8;
-$color-red-light: #ffb5b5;
-$color-red-normal: #ff6868;
-$color-yellow-very-light: #fffae6;
-$color-yellow-light: #ffefad;
-$color-yellow-normal: #ffcf11;
-$color-green-very-light: #e8f9f7;
-$color-green-light: #b5ece5;
-$color-green-normal: #33dfc8;
-$color-purple-very-light: #efecff;
-$color-purple-light: #ccc2ff;
-$color-purple-normal: #705bfe;
-$color-white-very-light: #ffffff;
-$color-white-light: #f3f3f3;
-$color-white-normal: #e4e4e4;
+$color-grey-very-light: #8b949e; /* GitHub's Gray 3 */
+$color-grey-super-light: #6e7681; /* GitHub's Gray 4 */
+$color-grey-super-ultra-light: #484f58; /* GitHub's Gray 5 */
+$color-grey-light: #30363d; /* GitHub's Gray 6 */
+$color-grey-normal: #21262d; /* GitHub's Gray 7 */
+$color-blue-ultra-light: #58a6ff; /* Lighter GitHub Blue */
+$color-blue-very-light: #1f6feb; /* GitHub's Blue */
+$color-blue-light: #1158c7; /* Darker GitHub Blue */
+$color-blue-mid: #0d419d; /* Dark GitHub Blue */
+$color-blue-normal: #5c6d9b; /* Even Darker GitHub Blue */
+$color-red-very-light: #ff7b72; /* Light GitHub Red */
+$color-red-light: #f85149; /* GitHub's Red */
+$color-red-normal: #da3633; /* Dark GitHub Red */
+$color-yellow-very-light: #e3b341; /* Light GitHub Yellow */
+$color-yellow-light: #dbab09; /* GitHub's Yellow */
+$color-yellow-normal: #b08800; /* Dark GitHub Yellow */
+$color-green-very-light: #268324; /* Light GitHub Green */
+$color-green-light: #238636; /* GitHub's Green */
+$color-green-normal: #196c2e; /* Dark GitHub Green */
+$color-purple-very-light: #a371f7; /* Light GitHub Purple */
+$color-purple-light: #8957e5; /* GitHub's Purple */
+$color-purple-normal: #6e40c9; /* Dark GitHub Purple */
+$color-white-very-light: #c9d1d9; /* GitHub's Gray 2 */
+$color-white-light: #8b949e; /* GitHub's Gray 3 */
+$color-white-normal: #6e7681; /* GitHub's Gray 4 */
 
-$color-default: $color-grey-normal;
+
+$color-default: $color-white-very-light;

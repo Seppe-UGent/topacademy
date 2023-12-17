@@ -1,16 +1,18 @@
 ﻿import React, { Component } from "react";
-import css from "./Course.module.scss";
+import css from "./Event.module.scss";
 import Headermenu from "../../genericComponents/Headermenu/Headermenu";
 import Hero from "../../genericComponents/Hero/Hero";
 import TeacherCard from "../TeacherCard/TeacherCard";
+import LocationCard from "../LocationCard/LocationCard";
 import Element from "../../genericComponents/Element/Element";
 import { storyblokEditable, StoryblokComponent } from "@storyblok/react";
 import { RichTextToHTML } from "../../../functions/storyBlokRichTextRenderer";
-import LocationCard from "../LocationCard/LocationCard";
 
-export default class Course extends Component {
+export default class Event extends Component {
 
 	constructor(props) {
+        console.log("-----------------------------------------------------")
+        console.log(props.blok.locations)
 		super(props);
 	}
 
@@ -23,26 +25,19 @@ export default class Course extends Component {
 					<div className={css["course-page__main-content"]}>
 						<div id="course-page__short-description" key="course-page__short-description" className={css["course-page__short-description"]}>
 							<section className={css["rich-text-section--with-navigator"]}>
-								<h2 className={css["rich-text-section__title"]}>What will we learn</h2>
+								<h2 className={css["rich-text-section__title"]}>What's on the program</h2>
 								<div className={css["rich-text-section__rich-text"]}>{RichTextToHTML({ document: this.props.blok.description })}</div>
 							</section>
 						</div>
 						<div id="course-page__short-description" key="course-page__short-description" className={css["course-page__short-description"]}>
 							<section className={css["rich-text-section--with-navigator"]}>
-								<h2 className={css["rich-text-section__title"]}>Coaches</h2>
+								<h2 className={css["rich-text-section__title"]}>Coach</h2>
 								{this.props.blok.teachers && this.props.blok.teachers.map((teacher) => (
 									<TeacherCard blok={teacher} key={teacher._uid} />
 								))}
 							</section>
 						</div>
-						<div id="course-page__short-description" key="course-page__short-description" className={css["course-page__short-description"]}>
-							<section className={css["rich-text-section--with-navigator"]}>
-								<h2 className={css["rich-text-section__title"]}>Locations</h2>
-								{this.props.blok.locations && this.props.blok.locations.map((location) => (
-									<LocationCard blok={location} key={location._uid} />
-								))}
-							</section>
-						</div>
+					
 						<div id="course-page__short-description" key="course-page__short-description" className={css["course-page__short-description"]}>
 							<section className={css["rich-text-section--with-navigator"]}>
 							</section>

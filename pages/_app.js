@@ -25,6 +25,8 @@ import ThreeCol from '../components/layoutComponents/ThreeCol/ThreeCol';
 import ImageCarousel from '../components/genericComponents/ImageCarousel/ImageCarousel';
 import Product from '../components/specificComponents/Product/Product';
 import Location from '../components/specificComponents/Location/Location';
+import Event from '../components/specificComponents/Event/Event';
+
 
 
 const components = {
@@ -38,6 +40,7 @@ const components = {
   intro: Intro,
   leftrightblock: LeftRightBlock,
   course: Course,
+  event: Event,
   list: List,
   element: Element,
   onecol: OneCol,
